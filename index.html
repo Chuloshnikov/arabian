@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReStimDM - علاج التهاب البروستاتا</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            direction: ltr; /* по умолчанию ltr */
+        }
+        .rtl {
+            direction: rtl;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        .article {
+            margin-bottom: 30px;
+        }
+        .form {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .form input, .form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="content">
+        <header>
+            <h1>ReStimDM - علاج التهاب البروستاتا</h1>
+        </header>
+        
+        <nav>
+            <a href="#">شعار</a>
+            <a href="#">قائمة طعام</a>
+            <a href="#">أخبار</a>
+            <a href="#">بحث</a>
+        </nav>
+        
+        <div class="content">
+            <div class="article">
+                <h2>أزمة علاج التهاب البروستاتا العالمية في المغرب!</h2>
+                <p>
+                    العالم الياباني سيتحدث في مقابلة عن طرق مبتكرة لعلاج العجز الجنسي والتهاب البروستاتا!
+                </p>
+                <p>
+                    الدكتور هيروشي يامادا: التهاب البروستاتا هو مرض خطير للغاية يؤدي مع مرور الوقت إلى أضرار جسيمة لجميع أعضاء وأنظمة الجسم تقريبًا.
+                </p>
+                <!-- Дополнительный контент -->
+            </div>
+
+            <div class="form">
+                <h3>اطلب مع خصم</h3>
+                <form>
+                    <input type="text" placeholder="اسمك" required>
+                    <input type="tel" placeholder="+212" required>
+                    <button type="submit">اطلب مع خصم</button>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <p>الشروط والأحكام | سياسة الخصوصية | سياسة الإرجاع والاسترداد والاستبدال</p>
+        </footer>
+    </div>
+
+    <script>
+        function setDirectionBasedOnLanguage() {
+            const language = document.documentElement.lang;
+            const container = document.getElementById('content');
+            
+            if (language === 'ar') {
+                container.classList.add('rtl');
+            } else {
+                container.classList.remove('rtl');
+            }
+        }
+        
+        setDirectionBasedOnLanguage();
+    </script>
+</body>
+</html>
